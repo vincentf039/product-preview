@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Outfit&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+:root{
+    /*Primary*/
+    --clr-Dark-cyan: hsl(158, 36%, 37%);
+    --clr-Cream: hsl(30, 38%, 92%);
+    /*Neutral*/
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    background-color: pink;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    border-radius: 30px;
+    background-color: var(--White);
+    margin-top: 100px;
+}
+.container img{
+    width: 100%;
+    border-radius: 10% 0 0 8%;
+    margin-bottom: -4px;
+}
+.text{
+    padding: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+.text p{
+    color: var(--Dark-grayish-blue);
+}
+.text h1{
+    font-family: 'Fraunces', sans-serif;
+}
+.text span{
+    color: var(--clr-Dark-cyan);
+}
+.text span{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.add-to-cart{
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    background-color: var(--clr-Dark-cyan);
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+@media only screen and (max-width: 450px) {
+    body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .container{
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+}
+@media only screen and (max-width: 450px){
+    .container img{
+        width: 95%;
+        border-radius: 5% 5% 5% 5%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    
+}
